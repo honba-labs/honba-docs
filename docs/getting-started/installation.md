@@ -111,7 +111,7 @@ For LLM-driven research (optional):
     pytest python/tests/
 
     # Run a minimal backtest end-to-end
-    python3 examples/06_backtesting/01_first_backtest.py
+    python3 examples/backtesting/01_first_backtest.py
 
 If all three commands succeed, you're ready to write your first strategy.
 
