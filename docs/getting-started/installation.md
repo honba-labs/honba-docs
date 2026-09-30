@@ -40,7 +40,7 @@ On macOS with Homebrew:
 
 ## Clone and Build
 
-    git clone https://github.com/honba/honba.git
+    git clone https://github.com/honba-labs/honba.git
     cd honba
 
 ### Build the Rust workspace
@@ -76,7 +76,7 @@ Verify:
 Adapters live in a separate repository so the core engine stays
 broker-agnostic. Install only the ones you need:
 
-    git clone https://github.com/honba/honba-adapters.git
+    git clone https://github.com/honba-labs/honba-adapters.git
     cd honba-adapters
 
     pip install -e ./shared

@@ -5,7 +5,7 @@ tutorial covers AMFI NAV data, direct-vs-regular plans, and XIRR
 computation.
 
 **Time:** 15 minutes.
-**Prerequisites:** [Installation](../getting_started/installation.md),
+**Prerequisites:** [Installation](../getting-started/installation.md),
 [Mutual Funds](../india/mutual_funds.md).
 
 ## What You Will Build

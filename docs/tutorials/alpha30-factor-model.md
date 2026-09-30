@@ -5,7 +5,7 @@ This tutorial covers universe rebalancing, look-ahead safety, and
 portfolio construction.
 
 **Time:** 40 minutes.
-**Prerequisites:** [Installation](../getting_started/installation.md),
+**Prerequisites:** [Installation](../getting-started/installation.md),
 [Universes](../india/universes.md).
 
 ## What You Will Build

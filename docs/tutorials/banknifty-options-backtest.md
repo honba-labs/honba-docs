@@ -5,7 +5,7 @@ tutorial covers expiry cycles, Greeks, and the STT asymmetry between
 premium and exercise that trips up most options backtests.
 
 **Time:** 45 minutes.
-**Prerequisites:** [Installation](../getting_started/installation.md),
+**Prerequisites:** [Installation](../getting-started/installation.md),
 [Options](../india/options.md).
 
 ## What You Will Build

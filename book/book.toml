@@ -1,0 +1,18 @@
+[book]
+title = "Honba"
+authors = ["Honba Labs"]
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[preprocessor.rustdoc-links]
+command = "mdbook-rustdoc-links"
+
+[preprocessor.linkcheck]
+command = "mdbook-linkcheck"
+
+[output.linkcheck]
+follow-web-links = false

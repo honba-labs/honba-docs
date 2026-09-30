@@ -6,7 +6,7 @@ entirely against the small synthetic dataset that ships with the
 repository.
 
 **Time:** 20 minutes.
-**Prerequisites:** [Installation](../getting_started/installation.md).
+**Prerequisites:** [Installation](../getting-started/installation.md).
 
 ## What You Will Build
 

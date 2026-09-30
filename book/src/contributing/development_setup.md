@@ -25,7 +25,7 @@ Install the extra tools:
 
 ## Clone and Bootstrap
 
-    git clone https://github.com/honba/honba.git
+    git clone https://github.com/honba-labs/honba.git
     cd honba
 
     # Install git hooks

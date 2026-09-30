@@ -39,9 +39,9 @@ proven ideas into a single stack:
 
 ## Where to Start
 
-1. [Installation](getting_started/installation.md) — set up Rust, Python, and
+1. [Installation](getting-started/installation.md) — set up Rust, Python, and
    the broker adapters.
-2. [Your First Backtest](getting_started/first_backtest.md) — run a moving
+2. [Your First Backtest](getting-started/first-backtest.md) — run a moving
    average strategy on NIFTY 50.
 3. [Architecture Overview](architecture/overview.md) — understand why the
    crate hierarchy is what it is.

@@ -6,7 +6,7 @@ covers prompt construction, cost budgeting, and how to read the loop's
 output.
 
 **Time:** 30 minutes of setup, then overnight unattended.
-**Prerequisites:** [Installation](../getting_started/installation.md),
+**Prerequisites:** [Installation](../getting-started/installation.md),
 [Research Loop](../ai/research_loop.md).
 
 **Warning:** This tutorial uses the LLM API and incurs costs (typically
