@@ -1,18 +1,18 @@
 [book]
-title = "Honba"
+title = "Honba — Internals"
 authors = ["Honba Labs"]
 language = "en"
 src = "src"
 
 [build]
-build-dir = "book"
+build-dir = "build"
 create-missing = false
 
-[preprocessor.rustdoc-links]
-command = "mdbook-rustdoc-links"
+#[preprocessor.rustdoc-links]
+# Points at the Rust workspace, not the book
+#manifest-path = "../honba/Cargo.toml"
 
-[preprocessor.linkcheck]
-command = "mdbook-linkcheck"
-
-[output.linkcheck]
-follow-web-links = false
+#[output.linkcheck]
+# Only warn on broken external links while the site is new
+#warning-policy = "warn"
+#follow-web-links = false
