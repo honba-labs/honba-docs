@@ -1,7 +1,7 @@
 site_name: Honba Documentation
 site_description: AI-native trading and research platform for Indian markets
 site_url: https://honba.github.io/docs
-repo_url: https://github.com/honba/honba
+repo_url: https://github.com/honba-labs/honba
 repo_name: honba/honba
 
 theme:
@@ -87,7 +87,7 @@ nav:
       - BANKNIFTY Options Backtest: tutorials/banknifty-options-backtest.md
       - Alpha30 Factor Model: tutorials/alpha30-factor-model.md
       - SIP Backtest: tutorials/sip-backtest.md
-      - Autoresearch Loop: tutorials/autoresearch-loop.md
+      - Autoresearch Loop: tutorials/autoresearch_loop.md
   - Contributing:
       - contributing/index.md
       - Development Setup: contributing/development_setup.md
