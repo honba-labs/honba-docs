@@ -1,11 +1,20 @@
 # Summary
 
+# AI Layer
+
+- [Research Loop](research_loop.md)
+- [MCP Gateway](mcp_gateway.md)
+- [RL Training](rl_training.md)
+- [Natural Language Verification](nl_verification.md)
+
 # Architecture
 
-- [Adapter Interface](architecture/adapter_interface.md)
+# Architecture
+
+- [Overview](architecture/overview.md)
 - [Crate Hierarchy](architecture/crate_hierarchy.md)
-- [Architecture](architecture/index.md)
 - [Message Flow](architecture/message_flow.md)
+- [Adapter Interface](architecture/adapter_interface.md)
 
 # Backtesting
 

@@ -57,6 +57,7 @@ nav:
       - Mutual Funds: india/mutual_funds.md
       - Universes: india/universes.md
       - Cost Model: india/cost_model.md
+      - Market Calendar: india/market_calendar.md
   - AI:
       - ai/index.md
       - Research Loop: ai/research_loop.md
@@ -79,4 +80,7 @@ nav:
   - API:
       - Python: api/python/index.md
   - Internals (mdBook): https://honba-labs.github.io/honba/book/
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Adapter Interface: architecture/adapter_interface.md
 

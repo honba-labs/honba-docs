@@ -5,7 +5,7 @@ toolchain, the test loop, the pre-commit hooks, and the common
 workflows.
 
 If you only want to *use* Honba, see
-[Installation](../getting_started/installation.md). This document is
+[Installation](https://honba-labs.github.io/honba-docs/getting-started/installation.md). This document is
 for people changing the code.
 
 ## Prerequisites
