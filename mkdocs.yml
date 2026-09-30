@@ -1,0 +1,96 @@
+site_name: Honba Documentation
+site_description: AI-native trading and research platform for Indian markets
+site_url: https://honba.github.io/docs
+repo_url: https://github.com/honba/honba
+repo_name: honba/honba
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - getting-started/index.md
+      - Installation: getting-started/installation.md
+      - First Backtest: getting-started/first-backtest.md
+  - Architecture:
+      - architecture/index.md
+      - Overview: architecture/overview.md
+      - Crate Hierarchy: architecture/crate_hierarchy.md
+      - Message Flow: architecture/message_flow.md
+      - Adapter Interface: architecture/adapter_interface.md
+  - India:
+      - india/index.md
+      - Market Calendar: india/market_calendar.md
+      - Cost Model: india/cost_model.md
+      - Universes: india/universes.md
+      - Mutual Funds: india/mutual_funds.md
+      - Options: india/options.md
+      - Brokers: india/brokers.md
+  - Strategies:
+      - strategies/index.md
+      - Writing Strategies: strategies/writing_strategies.md
+      - Indicators: strategies/indicators.md
+      - Position Management: strategies/position_management.md
+  - Backtesting:
+      - backtesting/index.md
+      - Three-Tier Pipeline: backtesting/three_tier_pipeline.md
+      - Cost Modeling: backtesting/cost_modeling.md
+      - Latency Modeling: backtesting/latency_modeling.md
+      - Statistical Validation: backtesting/statistical_validation.md
+  - AI:
+      - ai/index.md
+      - Research Loop: ai/research_loop.md
+      - RL Training: ai/rl_training.md
+      - MCP Gateway: ai/mcp_gateway.md
+      - NL Verification: ai/nl_verification.md
+  - Tutorials:
+      - tutorials/index.md
+      - First NIFTY 50 Strategy: tutorials/first-nifty50-strategy.md
+      - BANKNIFTY Options Backtest: tutorials/banknifty-options-backtest.md
+      - Alpha30 Factor Model: tutorials/alpha30-factor-model.md
+      - SIP Backtest: tutorials/sip-backtest.md
+      - Autoresearch Loop: tutorials/autoresearch-loop.md
+  - Contributing:
+      - contributing/index.md
+      - Development Setup: contributing/development_setup.md
+      - Dependency Rules: contributing/dependency_rules.md
+      - Adding Indicators: contributing/adding_indicators.md
+      - Adding Adapters: contributing/adding_adapters.md
