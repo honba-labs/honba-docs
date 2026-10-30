@@ -86,10 +86,10 @@ Create `banknifty_straddle.py`:
 
 Append the configuration:
 
-    from honba import Honba
+    from honba import Strategy
 
     if __name__ == "__main__":
-        session = Honba.backtest(
+        session = Strategy.backtest(
             BankNiftyStraddle(),
             symbol="BANKNIFTY",
             start="2023-01-01",

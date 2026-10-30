@@ -44,7 +44,7 @@ Honba's strategy interface is clean, expressive, and type-annotated, combining J
 ```python
 from decimal import Decimal
 from honba import Strategy, Parameter, Bar, Tick, OrderEvent, Position
-from honba.indicators import EMA, RSI, ATR
+from honba.indicators import Ema, Rsi, Atr
 
 class MeanReversionNiftyStrategy(Strategy):
     """
@@ -64,9 +64,9 @@ class MeanReversionNiftyStrategy(Strategy):
         self.subscribe_bars(self.symbol, timeframe="5m")
         
         # Incremental streaming indicators (computed in Rust without GIL)
-        self.rsi = RSI(period=self.rsi_period)
-        self.ema_trend = EMA(period=50)
-        self.atr = ATR(period=14)
+        self.rsi = Rsi(period=self.rsi_period)
+        self.ema_trend = Ema(period=50)
+        self.atr = Atr(period=14)
 
     def on_bar(self, bar: Bar) -> None:
         """Called upon completion of each canonical timeframe candle."""
@@ -152,10 +152,10 @@ Honba leverages the **PyArrow PyCapsule Protocol**:
 
 ```python
 import polars as pl
-from honba.data import load_catalog
+from honba.data import load_bars
 
 # Returns a Polars DataFrame backed by zero-copy Arrow memory
-df = load_catalog(symbol="NSE:NIFTY50", timeframe="1m", start="2025-01-01", end="2026-01-01")
+df = load_bars(symbol="NSE:NIFTY50", timeframe="1m", start="2025-01-01", end="2026-01-01")
 print(df.head())
 ```
 

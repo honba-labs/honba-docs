@@ -141,7 +141,7 @@ pub struct ChartSnapshotRef {
     pub instrument: InstrumentId,
     pub timeframe: Timeframe,             // honba_core::Timeframe — same type the lakehouse partitions on
     pub window: TimeRange,                // { from: DateTime<Utc>, to: DateTime<Utc> } — padded around the trade (§5)
-    pub indicator_overlays: Vec<IndicatorSpec>,  // e.g. SMA(20), already defined in honba-me's 100+ indicator catalog
+    pub indicator_overlays: Vec<IndicatorSpec>,  // e.g. Sma(20), already defined in honba-me's 100+ indicator catalog
     pub drawings: Vec<ChartDrawing>,
 }
 
