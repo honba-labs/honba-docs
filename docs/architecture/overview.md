@@ -1,5 +1,7 @@
 # Honba System Architecture Overview
 
+> **[STATUS: IMPLEMENTED]** — `all crates`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **本場 (Honba)**: An institutional-grade, AI-native algorithmic trading operating system and quantitative research platform designed for high-frequency responsiveness, temporal determinism, and full regulatory compliance across Indian (NSE, BSE, NFO, MCX) and international capital markets.
 
 ---

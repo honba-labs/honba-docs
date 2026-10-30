@@ -1,5 +1,7 @@
 # Order Lifecycle, Rejection & Cancellation Protocol
 
+> **[STATUS: IMPLEMENTED]** — `honba-kokoro-oms / honba-mon / honba-te`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Microstructure Integrity**: How orders, cancellations, modifications, and rejections transition deterministically across the Order Management System (`honba-kokoro-oms`), pre-trade risk engine (`honba-mon`), and broker execution pipelines (`honba-te`).
 
 ---

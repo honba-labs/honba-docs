@@ -1,5 +1,7 @@
 # Using the Honba Simulator
 
+> **[STATUS: IMPLEMENTED]** — `honba-ya-backtest`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 The Simulator is the browser workbench for turning a strategy — built in the
 [Algo Designer](algo_designer_and_simulator.md) or picked from the Library —
 into a historical backtest with charts, trade markers and institutional

@@ -1,5 +1,7 @@
 # Adapter Interface & Market Microstructure Pipelines
 
+> **[STATUS: IMPLEMENTED]** — `honba-me / honba-te`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Decoupled Architecture**: High-frequency institutional market data ingestion (`honba-me`) is strictly separated from outbound broker order execution (`honba-te`). A quantitative strategy in Honba can seamlessly observe live market depth on one broker feed (e.g. Zerodha Kite 20-depth) while executing orders across another broker (e.g. Upstox or Angel One) through a cost-optimized Smart Order Router.
 
 ---

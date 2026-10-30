@@ -1,5 +1,7 @@
 # Contracts & Schema Generation from Rust
 
+> **[STATUS: IMPLEMENTED]** — `honba-tamashii-codegen`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Single Source of Truth**: Every machine-readable contract, JSON schema, OpenAPI specification, Pydantic model, and MCP tool definition in Honba is generated deterministically from Rust types via `schemars`. Hand-written schema files and manual API models are strictly prohibited.
 
 ---

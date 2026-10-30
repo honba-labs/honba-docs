@@ -1,5 +1,7 @@
 # Honba Tradebook — Trading Journal & Post-Mortem Replay — Architecture
 
+> **[STATUS: PLANNED]** — `honba-kokoro-journal`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 **Document ID:** HBD-2026-DES-005
 **Status:** Draft — proposed architecture, not yet implemented
 **Version:** 1.0

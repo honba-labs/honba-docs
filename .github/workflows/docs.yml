@@ -35,6 +35,10 @@ jobs:
         working-directory: honba-docs
         run: mkdocs build --strict
 
+      - name: docs conformance check
+        working-directory: honba-docs
+        run: python scripts/verify_conformance.py --strict
+
       - uses: peaceiris/actions-mdbook@v2
         with:
           mdbook-version: 'latest'

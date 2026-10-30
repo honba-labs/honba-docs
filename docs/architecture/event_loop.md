@@ -1,5 +1,7 @@
 # Actor Runtime & Event Loop Architecture
 
+> **[STATUS: IMPLEMENTED]** — `honba-ya-actors`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Concurrency Architecture**: Inspired by the low-latency actor architectures of **NautilusTrader** and the **LMAX Disruptor**, Honba organizes runtime execution into a responsive, multi-threaded Tokio actor pipeline. Subsystems communicate via asynchronous, typed message-passing over bounded, lock-free channels, completely decoupled from Python's Global Interpreter Lock (GIL).
 
 ---
