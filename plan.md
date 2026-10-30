@@ -41,7 +41,7 @@
 - `M1-3`: Fix `from honba import Honba` imports → correct `Strategy` / `honba.session` imports across `docs/`.
 - `M1-4`: Fix `from honba import Honba` imports across `book/src/`.
 - `M1-5`: Replace `load_catalog` with `load_bars`/`Lakehouse` in `docs/architecture/python_first.md`.
-- `M1-6`: Verify all Python snippets against `honba-examples`/`honba-strategies` and mark mismatches.
+- [x] `M1-6`: Verify all Python snippets against `honba-examples`/`honba-strategies` and mark mismatches.
 
 ---
 

@@ -15,7 +15,8 @@ Docs drift remediation planned & tracked.
 - M5 CI hardening + Pages deploy + pinned requirements FIXED and merged via PR #25 (main).
 - M5 issues #17–#19 closed.
 - ALL MILESTONES M1–M5 DONE.
-- Remaining open: M1-6 (#6): verify all Python snippets against honba-examples/honba-strategies (cross-repo verification).
+- M1-6 (#6) CLOSED: verified all Python snippets in docs/ correspond to tested code in honba-examples/honba-strategies (SmaCrossover, CompositeSmaRsi, SmaSizing, RiskManagedSma, BasketSma, LongShortCrossover match; imports Sma/Ema/Rsi/Atr, Strategy top-level, load_bars/load_ticks/Lakehouse all present in honba 0.1.0). No mismatches found.
+- ALL MILESTONES M1–M5 AND ALL 19 ISSUES #1–#19 CLOSED.
 
 ## Decisions & Discoveries (probe-verified)
 - D1: Indicator classes are Sma/Ema/Rsi/Atr, but ~20 docs still use SMA/RSI/EMA/ATR. FIXED in docs/.
