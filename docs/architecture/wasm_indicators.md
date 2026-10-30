@@ -1,5 +1,7 @@
 # WASM & High-Performance Indicators Engine
 
+> **[STATUS: IMPLEMENTED]** — `honba-me-indicators / honba-kao-api-wasm`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Single Mathematical Source of Truth**: The `honba-api-wasm` and `honba-me-indicators` crates compile verified Rust mathematical indicators to WebAssembly (WASM) for the Leptos frontend (`honba-kao`), browser simulators, and AI evaluation loops. Compute is pure, zero-allocation, and byte-for-byte identical across native Rust, Python (`honba-tamashii`), and WASM.
 
 ---

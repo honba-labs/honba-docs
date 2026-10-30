@@ -1,5 +1,7 @@
 # Domain-Driven Design (DDD) in Honba
 
+> **[STATUS: IMPLEMENTED]** — `honba-core`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Architectural Paradigm**: Honba adopts a formal Domain-Driven Design (DDD) methodology inspired by institutional trading engines such as **StockSharp**, **NautilusTrader**, and LMAX Architecture. The core domain is strictly pure, zero-I/O, deterministic, and isolated from network protocols, databases, and UI frameworks.
 
 ---

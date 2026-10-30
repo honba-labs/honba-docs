@@ -1,5 +1,7 @@
 # Honba-kao Simulator — Port Design Document
 
+> **[STATUS: SCAFFOLD]** — `honba-kao`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 **Document ID:** HBD-2026-DES-005
 **Status:** Draft for Implementation
 **Version:** 1.0

@@ -1,5 +1,7 @@
 # Honba Strategy Studio — AI-Native Strategy Workbench & Auto-Researcher
 
+> **[STATUS: SCAFFOLD]** — `honba-kao`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 **Document ID:** HBD-2026-DES-006
 **Status:** Draft for Implementation
 **Version:** 1.0

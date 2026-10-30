@@ -1,5 +1,7 @@
 # AI Engine & Autonomous Quant Researcher (`honba-nou`)
 
+> **[STATUS: IMPLEMENTED]** — `honba-nou`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Architectural Doctrine**: AI-Native by Design, Strictly Bounded by Type Safety. Honba embeds frontier large language models (Claude, Gemini) and reinforcement learning into a closed, mathematically grounded quantitative research operating system. Dynamic code execution (`eval`) and ungrounded trading decisions are strictly forbidden.
 
 ---

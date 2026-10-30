@@ -1,5 +1,7 @@
 # Migration Plan: Consolidating Pre-Trade Risk from `honba-kokoro-risk` to `honba-mon`
 
+> **[STATUS: IMPLEMENTED]** — `honba-mon / honba-kokoro`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Document Status**: Active Migration Blueprint  
 > **Author**: Google DeepMind Agentic Assistant (Antigravity)  
 > **Target Subsystems**: `honba-mon`, `honba-ya`, `honba-tamashii`, `honba-nou`, `honba-me`, `honba-te`, `honba-kokoro`  

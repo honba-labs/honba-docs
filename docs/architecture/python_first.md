@@ -1,5 +1,7 @@
 # Python-First Architecture in Honba
 
+> **[STATUS: IMPLEMENTED]** — `honba-tamashii`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Design Principle**: Python-First developer ergonomics with bare-metal Rust performance under the hood. Inspired by the architectural triumphs of **NautilusTrader**, **Jesse**, and modern **StockSharp**, Honba provides an intuitive, highly expressive Python strategy framework where all computationally intensive, concurrent, and safety-critical execution is delegated to an unyielding Rust actor core.
 
 ---

@@ -1,5 +1,7 @@
 # Strategy Tester & Automatic Strategy Enhancer
 
+> **[STATUS: IMPLEMENTED]** — `honba-ya-backtest / honba-ya-enhancer`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Research-to-Production Parity**: Inspired by **Jesse's** elegant declarative optimization engine and institutional quant testing methodologies (Marcos López de Prado), Honba combines a high-throughput, microsecond-fidelity event-driven strategy backtester with an automated strategy enhancer powered by Genetic Algorithms, Bayesian Optimization, Walk-Forward Analysis, and AI-native prompt mutation.
 
 ---

@@ -1,5 +1,7 @@
 # Honba Algo Designer & Simulator — Phase-Wise Implementation Plan
 
+> **[STATUS: IN-PROGRESS]** — `honba-fe (Algo Designer)`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 **Document ID:** HBD-2026-DES-004
 **Status:** Approved for Implementation
 **Version:** 2.0 (phase-wise plan; supersedes the v1.0 architecture note of the same ID)

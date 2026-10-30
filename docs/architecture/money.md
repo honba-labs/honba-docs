@@ -1,5 +1,7 @@
 # Money, Currency & Indian Cost Modeling
 
+> **[STATUS: IMPLEMENTED]** — `honba-core`. See [Platform Conformance Matrix](conformance_matrix.md).
+
 > **Zero Floats Policy** — In Honba, floating-point numbers (`f32`/`f64`) are strictly forbidden across all prices, quantities, portfolio holdings, margins, and cost calculations. All financial math is conducted with exact 128-bit decimal arithmetic via `rust_decimal::Decimal`.
 
 ---
