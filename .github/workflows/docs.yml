@@ -14,11 +14,11 @@ jobs:
         with:
           path: honba-docs
 
-      # sibling checkout so mkdocstrings paths: ../honba/python resolves
+      # sibling checkout so mkdocstrings paths: ../honba-tamashii/python/honba resolves
       - uses: actions/checkout@v4
         with:
-          repository: honba-labs/honba
-          path: honba
+          repository: honba-labs/honba-tamashii
+          path: honba-tamashii
 
       - uses: actions/setup-python@v5
         with:
