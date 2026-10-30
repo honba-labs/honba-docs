@@ -121,7 +121,7 @@
 | M2 | Navigation & page inventory integrity | High | M2-1 … M2-3 | done |
 | M3 | Python-Rust bridge & mkdocstrings path | High | M3-1 … M3-3 | done |
 | M4 | Status badges & conformance matrix | Medium | M4-1 … M4-4 | done |
-| M5 | CI strict build & deploy | Medium | M5-1 … M5-3 | not started |
+| M5 | CI strict build & deploy | Medium | M5-1 … M5-3 | done |
 
 ---
 
