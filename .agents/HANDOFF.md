@@ -12,7 +12,10 @@ Docs drift remediation planned & tracked.
 - M3 issues #10–#12 closed. (M3-3 api-reference.md regen requires Rust toolchain via make docs; tracked as build-env prerequisite.)
 - M4 conformance matrix + status badges + parity CI FIXED and merged via PR #24 (main).
 - M4 issues #13–#16 closed.
-- Remaining open: M1-6 (#6), M5 (#17–#19).
+- M5 CI hardening + Pages deploy + pinned requirements FIXED and merged via PR #25 (main).
+- M5 issues #17–#19 closed.
+- ALL MILESTONES M1–M5 DONE.
+- Remaining open: M1-6 (#6): verify all Python snippets against honba-examples/honba-strategies (cross-repo verification).
 
 ## Decisions & Discoveries (probe-verified)
 - D1: Indicator classes are Sma/Ema/Rsi/Atr, but ~20 docs still use SMA/RSI/EMA/ATR. FIXED in docs/.
@@ -24,8 +27,8 @@ Docs drift remediation planned & tracked.
 - M2-1: mkdocs.yml nav verified clean — 62/62 entries resolve, 0 missing, 0 orphans.
 - M2-2: book/src/SUMMARY.md was missing architecture/index.md, cost-model.md, market-calendar.md, overview.md; pointed NL Verification at stub nl_verification.md instead of full nl-verification.md. FIXED.
 
-## Immediate Next Step
-Work M1-6: verify all Python snippets against honba-examples/honba-strategies. Then proceed to M5 (CI strict builds, Pages deploy, pinned requirements).
+## Immediate Next Step (optional)
+Close out M1-6 (#6): verify every Python snippet in docs/ and book/src/ against tested code in honba-examples/honba-strategies per .agents/AGENTS.md. Everything else in plan.md is complete.
 
 ## Operating Invariants
 - .agents/AGENTS.md: no in-file #[test]; tests/ parallel to src; zero floats; zero-I/O domain purity (docs repo is markdown only).
