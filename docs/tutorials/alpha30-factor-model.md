@@ -103,10 +103,10 @@ universe as it exists *now* rather than as it existed *then*.
 
 Append:
 
-    from honba import Honba
+    from honba import Strategy
 
     if __name__ == "__main__":
-        session = Honba.backtest(
+        session = Strategy.backtest(
             build_strategy(),
             symbol="MULTI",
             start="2018-01-01",

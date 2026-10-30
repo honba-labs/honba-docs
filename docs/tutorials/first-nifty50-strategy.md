@@ -21,8 +21,8 @@ A strategy that:
 
 Create `first_strategy.py` in the workspace root:
 
-    from honba import Honba, Strategy
-    from honba.indicators import SMA
+    from honba import Strategy
+    from honba.indicators import Sma
     from honba.markets.india.universes import resolve_universe
 
 
@@ -32,8 +32,8 @@ Create `first_strategy.py` in the workspace root:
         slow_period: int = 50
 
         def on_start(self):
-            self.fast = SMA(self.fast_period)
-            self.slow = SMA(self.slow_period)
+            self.fast = Sma(self.fast_period)
+            self.slow = Sma(self.slow_period)
 
         def on_bar(self, bar):
             f = self.fast.update(bar.close)
@@ -52,7 +52,7 @@ Create `first_strategy.py` in the workspace root:
 Append to `first_strategy.py`:
 
     if __name__ == "__main__":
-        session = Honba.backtest(
+        session = Strategy.backtest(
             SmaCrossover(),
             symbol="INFY",
             start="2023-01-01",

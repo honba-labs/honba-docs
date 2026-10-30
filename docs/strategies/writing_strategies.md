@@ -120,13 +120,13 @@ self.submit(intent)             # Same as self.ctx.submit(intent)
 Indicators are stateful objects that consume a stream and produce values. They are defined in `honba.strategies.indicators`:
 
 ```python
-from honba.strategies.indicators import SMA, RSI, ATR, Bollinger
+from honba.strategies.indicators import Sma, Rsi, Atr, Bollinger
 
 def on_start(self):
-    self.sma_fast = SMA(period=20)
-    self.sma_slow = SMA(period=50)
-    self.rsi = RSI(period=14)
-    self.atr = ATR(period=14)
+    self.sma_fast = Sma(period=20)
+    self.sma_slow = Sma(period=50)
+    self.rsi = Rsi(period=14)
+    self.atr = Atr(period=14)
 
 def on_bar(self, bar):
     fast = self.sma_fast.update(bar.close)
@@ -194,7 +194,7 @@ Logs are captured by the engine and included in the backtest report. In live mod
 from honba.entities.bar import Bar
 from honba.entities.instrument import InstrumentId
 from honba.strategies.base import Strategy, Parameter
-from honba.strategies.indicators import SMA, ATR
+from honba.strategies.indicators import Sma, Atr
 from honba.entities.order import OrderIntent
 
 
@@ -208,16 +208,16 @@ class SmaAtrStrategy(Strategy):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.sma_fast: dict[InstrumentId, SMA] = {}
-        self.sma_slow: dict[InstrumentId, SMA] = {}
-        self.atr: dict[InstrumentId, ATR] = {}
+        self.sma_fast: dict[InstrumentId, Sma] = {}
+        self.sma_slow: dict[InstrumentId, Sma] = {}
+        self.atr: dict[InstrumentId, Atr] = {}
 
     def on_start(self):
         # Indicators are created in on_start so they start fresh each run
         for iid in self.universe:
-            self.sma_fast[iid] = SMA(self.fast_period)
-            self.sma_slow[iid] = SMA(self.slow_period)
-            self.atr[iid] = ATR(self.atr_period)
+            self.sma_fast[iid] = Sma(self.fast_period)
+            self.sma_slow[iid] = Sma(self.slow_period)
+            self.atr[iid] = Atr(self.atr_period)
 
     def on_bar(self, bar: Bar):
         iid = bar.instrument_id

@@ -29,17 +29,17 @@ implementations via PyO3, so a Python strategy gets Rust performance.
 
 ### Simple Moving Average
 
-    from honba.strategies.indicators import SMA
+    from honba.strategies.indicators import Sma
 
-    sma = SMA(period=20)
+    sma = Sma(period=20)
     sma.update(price)       # → None until 20 values seen
     # ... 20 values later
     sma.update(price)       # → float
 
 ### Exponential Moving Average
 
-    ema = EMA(period=20)          # standard EMA
-    ema = EMA(period=20, alpha=0.1)  # explicit smoothing factor
+    ema = Ema(period=20)          # standard EMA
+    ema = Ema(period=20, alpha=0.1)  # explicit smoothing factor
 
 ### Weighted Moving Average
 
@@ -69,12 +69,12 @@ Popular in Indian retail trading, especially on intraday timeframes:
 
 ### RSI
 
-    rsi = RSI(period=14)
+    rsi = Rsi(period=14)
     rsi.update(price)         # → 0..100
 
     # Wilder's smoothing is the default
-    # Use EMA-style smoothing if you need a different variant:
-    rsi = RSI(period=14, smoothing="ema")
+    # Use Ema-style smoothing if you need a different variant:
+    rsi = Rsi(period=14, smoothing="ema")
 
 ### Stochastic
 
@@ -109,7 +109,7 @@ Popular in Indian retail trading, especially on intraday timeframes:
 
 ### ATR
 
-    atr = ATR(period=14)
+    atr = Atr(period=14)
     atr.update(high, low, close)
 
 ### Keltner Channel
@@ -195,10 +195,10 @@ Detects opening gaps relative to the prior close:
 
 Some indicators wrap others:
 
-    # RSI on top of a moving average
+    # Rsi on top of a moving average
     smoothed_rsi = Composite(
-        primary=RSI(14),
-        smoother=SMA(3),
+        primary=Rsi(14),
+        smoother=Sma(3),
         field="value",
     )
 

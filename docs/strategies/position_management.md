@@ -308,7 +308,7 @@ This is a WonderTrader-inspired feature. Without merging, two accounts running t
 from honba.entities.bar import Bar
 from honba.entities.instrument import InstrumentId
 from honba.strategies.base import Strategy, Parameter
-from honba.strategies.indicators import SMA, ATR
+from honba.strategies.indicators import Sma, Atr
 from honba.entities.order import OrderIntent
 from honba.strategies.sizing import whole_shares
 
@@ -323,14 +323,14 @@ class MomentumPortfolio(Strategy):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.sma: dict[InstrumentId, SMA] = {}
-        self.atr: dict[InstrumentId, ATR] = {}
+        self.sma: dict[InstrumentId, Sma] = {}
+        self.atr: dict[InstrumentId, Atr] = {}
         self._rebalance_counter = 0
 
     def on_start(self):
         for iid in self.universe:
-            self.sma[iid] = SMA(self.lookback)
-            self.atr[iid] = ATR(14)
+            self.sma[iid] = Sma(self.lookback)
+            self.atr[iid] = Atr(14)
 
     def on_bar(self, bar: Bar):
         iid = bar.instrument_id

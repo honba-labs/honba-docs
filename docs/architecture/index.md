@@ -90,5 +90,6 @@ Explore the comprehensive architectural documentation:
 * **[honba-kao Strategy Studio](strategy_studio.md)**: Reactive Leptos 0.7 CSR visual canvas, AI Co-Pilot, and local hypothesis journal.
 * **[honba-kao Simulator Port](kao_simulator_port.md)**: WebAssembly-powered backtest simulator and analytical reporting workbench.
 * **[Using the Simulator](simulator_usage.md)**: User operational guide for running backtests, inspecting charts, and analyzing trade journals.
+* **[Tradebook (Journal & Replay)](tradebook.md)**: Multi-horizon trade journal, replayable chart-with-drawing storage, and the counterfactual replay-to-simulator post-mortem pipeline.
 * **[WASM Indicators Catalog](wasm_indicators.md)**: Vectorized indicators compiled to WebAssembly for sub-millisecond frontend calculation.
 * **[Rust-Python Contracts & Codegen](contracts_from_rust.md)**: Automated schema generation with `schemars`, Pydantic models, and cross-language golden conformance tests.
