@@ -1,14 +1,19 @@
 # Summary
 
+# Getting Started
+
+- [Overview](overview.md)
+
 # AI Layer
 
 - [Research Loop](research_loop.md)
 - [MCP Gateway](mcp_gateway.md)
 - [RL Training](rl_training.md)
-- [Natural Language Verification](nl_verification.md)
+- [Natural Language Verification](nl-verification.md)
 
 # Architecture
 
+- [Architecture Index](architecture/index.md)
 - [Overview](architecture/overview.md)
 - [Crate Hierarchy](architecture/crate_hierarchy.md)
 - [Message Flow](architecture/message_flow.md)
@@ -22,6 +27,11 @@
 - [Statistical Validation](backtesting/statistical_validation.md)
 - [Three Tier Pipeline](backtesting/three_tier_pipeline.md)
 - [Avoiding Backtest Biases](backtesting/avoiding_backtest_biases.md)
+
+# Data
+
+- [Cost Model](cost-model.md)
+- [Market Calendar](market-calendar.md)
 
 # Contributing
 

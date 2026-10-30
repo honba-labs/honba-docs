@@ -117,11 +117,25 @@
 
 | Milestone | Focus | Priority | Issues | Status |
 |-----------|-------|----------|--------|--------|
-| M1 | API surface & indicator naming conformance | Critical | M1-1 … M1-6 | not started |
-| M2 | Navigation & page inventory integrity | High | M2-1 … M2-3 | not started |
+| M1 | API surface & indicator naming conformance | Critical | M1-1 … M1-6 | done |
+| M2 | Navigation & page inventory integrity | High | M2-1 … M2-3 | done |
 | M3 | Python-Rust bridge & mkdocstrings path | High | M3-1 … M3-3 | not started |
 | M4 | Status badges & conformance matrix | Medium | M4-1 … M4-4 | not started |
 | M5 | CI strict build & deploy | Medium | M5-1 … M5-3 | not started |
+
+---
+
+## Source of Truth Decision (resolved M2-3)
+
+**Decision**: MkDocs `docs/` is the single source of truth for Honba user-facing documentation. The mdBook `book/` tree is archived as the legacy "internals" reference.
+
+**Rationale**:
+- `docs/` has a complete, verified nav (62/62 entries resolve, 0 orphans, 0 missing) and is actively maintained (M1 conformance fixes landed here).
+- `book/src/` has a partially-stale SUMMARY.md (was missing `architecture/index.md`, `cost-model.md`, `market-calendar.md`, `overview.md`; pointed NL Verification at a stub `nl_verification.md` instead of the full `nl-verification.md`). Fixed in M2-2.
+- `mkdocs.yml` already references mdBook as an external site (`Internals (mdBook): https://honba-labs.github.io/honba/book/`), confirming `docs/` is the primary nav root.
+- `book/build/` is a committed build artifact and should not be edited directly.
+
+**Action**: Future doc work lands in `docs/` only. `book/` receives no new content; corrections go to `docs/` and the mkdocs.yml nav. The mkdocs.yml "Internals (mdBook)" link remains as the cross-reference to the archived internals site.
 
 ---
 
