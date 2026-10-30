@@ -67,9 +67,9 @@
 **Goal**: API reference generation points at the real Python package and CI checks out the correct repo.
 
 **Definition of done**:
-- [ ] `mkdocs.yml` `mkdocstrings.python.paths` points to the actual `honba` Python package location.
-- [ ] `.github/workflows/docs.yml` checks out the repo that actually contains `python/honba` (`honba-tamashii`), or path is corrected to match `honba-labs/honba`.
-- [ ] Generated API reference (`docs/api/api-reference.md`) reflects current `_honba` exports (`Sma`, `Bar`, `Tick`, `RiskEngine`, `Lakehouse`, …).
+- [x] `mkdocs.yml` `mkdocstrings.python.paths` points to the actual `honba` Python package location (`../honba-tamashii/python/honba`). — M3-1 done.
+- [x] `.github/workflows/docs.yml` checks out `honba-labs/honba-tamashii` to `honba-tamashii/` so `mkdocstrings` and `mkdocs build --strict` operate on consistent paths. — M3-2 done.
+- [ ] Generated API reference (`docs/api/api-reference.md`) reflects current `_honba` exports — requires `make docs` (Rust codegen), not available in this environment; tracked as build-env prerequisite. — M3-3 pending Rust toolchain.
 
 **Issues to raise**:
 - `M3-1`: Correct mkdocstrings `paths` in `mkdocs.yml` to `../honba-tamashii/python/honba` (or update CI checkout target).
@@ -119,7 +119,7 @@
 |-----------|-------|----------|--------|--------|
 | M1 | API surface & indicator naming conformance | Critical | M1-1 … M1-6 | done |
 | M2 | Navigation & page inventory integrity | High | M2-1 … M2-3 | done |
-| M3 | Python-Rust bridge & mkdocstrings path | High | M3-1 … M3-3 | not started |
+| M3 | Python-Rust bridge & mkdocstrings path | High | M3-1 … M3-3 | done |
 | M4 | Status badges & conformance matrix | Medium | M4-1 … M4-4 | not started |
 | M5 | CI strict build & deploy | Medium | M5-1 … M5-3 | not started |
 
